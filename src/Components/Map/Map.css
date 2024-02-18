@@ -1,0 +1,61 @@
+.location {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 160px;
+}
+
+.location h3 {
+    font-size: 40px;
+}
+
+.location h4 {
+    font-size: 30px;
+    color: rgb(24, 41, 43);
+}
+
+.location .open-hours {
+    color: rgb(183, 225, 226);
+    background-color: rgba(172, 172, 172, 0.781);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+
+
+.google-map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.google-map iframe {
+    margin-top: 20px;
+}
+
+@media(max-width: 1200px) {
+    .google-map iframe {
+        width: 770px;
+        height: 650px;
+    }
+}
+
+
+@media(max-width: 800px) {
+    .google-map iframe {
+        width: 600px;
+        height: 450px;
+    }
+}
+
+@media(max-width: 600px) {
+    .google-map iframe {
+        width: 450px;
+        height: 300px;
+    }
+}
+

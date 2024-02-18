@@ -1,0 +1,41 @@
+.slider-products {
+    display: flex;
+}
+
+.carousel-item {
+    display: flex;
+    width: calc(150px * 10);
+    animation: scroll 15s 0.5s linear infinite;
+}
+
+.carousel-item::before .carousel-item::after {
+    position: absolute;
+    z-index: 2;
+}
+
+.carousel-item::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.carousel-item::before {
+    left: 0;
+    top: 0;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-150px * 5));
+    }
+}
+
+@media(max-width: 1200px){
+    .carousel-item {
+        padding: 20px;
+    }
+}

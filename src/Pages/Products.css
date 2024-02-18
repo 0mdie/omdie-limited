@@ -1,0 +1,87 @@
+.product-landing {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(0, 0, 0, 0.20),rgb(0, 0, 0, 0.2)), url('../Components/Assets/heroCopy.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  
+    align-items: center;
+    gap: 15px;
+}
+
+.product-landing h2 {
+    font-size: 40px;
+    color: rgb(59, 95, 100);
+    text-transform: uppercase;
+    margin-bottom: 90px;
+    font-weight: 800;
+    background-color: rgba(158, 157, 157, 0.726);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.all-products {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+    margin: 5px
+}
+
+.pagination {
+    padding: 10px;
+}
+
+button {
+    font-weight: 400;
+    color: rgb(197, 195, 195);
+    font-size: 15px;
+    padding: 15px;
+    margin: 7px;
+    border-radius: 10px;
+    background-color: rgb(59, 95, 100);
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+.active {
+    color: rgb(59, 95, 100);
+    background-color: rgb(158, 157, 157);
+}
+
+@media(max-width: 1200px){
+    .all-products {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: 5px;
+    }
+}
+
+@media(max-width: 800px){
+    .all-products {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+}
+
+@media(max-width: 600px){
+    .all-products {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+}
+

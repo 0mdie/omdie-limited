@@ -1,0 +1,32 @@
+#root{
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;  
+  font-weight: 400;
+  background-color: rgba(124, 123, 123, 0.801);
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin-top: 0;
+  padding: 5px;
+}
+
+footer p a {
+  text-decoration: none;
+  color: rgb(70, 136, 145);
+}
+
+footer p a:hover {
+  color: rgb(0, 41, 46);
+  transform: scale(1.05);
+}
