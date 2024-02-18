@@ -13,9 +13,9 @@ function App() {
       <BrowserRouter>
         <Navbar/>
       <Routes>
-        <Route path='/' element={<Shop/>}/>
-        <Route path='/products' element={<Products/>}/>
-        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/omdie-limited' element={<Shop/>}/>
+        <Route path='/omdie-limited/products' element={<Products/>}/>
+        <Route path='/omdie-limited/contact' element={<Contact/>}/>
       </Routes>
       </BrowserRouter>
     </div>
